@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#articles" class="w3-button w3-bar-item">Articles</a>
+  <a href="#youtube" class="w3-button w3-bar-item">Youtube</a>
+  <a href="#contact" class="w3-button w3-bar-item">Favourites</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="ball_5.jpg"
+  style="width:100%">
+  <img class="mySlides" src="ball_2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="ball_3.jpg"
+  style="width:100%">
+  <img class="mySlides" src="ball_4.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">NBA Project</h2>
+  <p class="w3-justify">Głównym celem aplikacji jest usprawnienie przeglądania informacji na temat wybranego zespołu koszykarskiego. Użytkownik będzie miał możliwość zalogowania się, wybrania tematyki tagów do później wyświetlanych artykułów, a także kanałów i filmów, których zawartość chciałby sprawdzać.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu. </p>
+  <p class="w3-justify">Główne funkcjonalności: <br>
+1.Pobieranie artykułów ze stron yahoo sport.<br>
+2.Udostępnianie wyników ostatnich meczy<br>
+3.Wyświetlanie filmów z serwisu YouTube np. skrótów meczy.<br>
+4.Zapisywanie ulubionych wpisów.</p>
+  </section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+ <h2 class="w3-wide">Zespół projektowy</h2>
+  <article class="w3-third">
+    <p>Jakub Szerszen</p>
+    <img src="orange-boy-icon.png" alt="Random Name" style="width:100%">
+    <p>194925</p>
+  </article>
+  <article class="w3-third">
+    <p>Katarzyna Zdeb</p>
+    <img src="red-woman-icon.png" alt="Random Name" style="width:100%">
+    <p>195430</p>
+  </article>
+  <article class="w3-third">
+    <p>Dominik Wozniczka</p>
+    <img src="brown-man-icon.png" alt="Random Name" style="width:100%">
+    <p>195324</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+
+ 
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
