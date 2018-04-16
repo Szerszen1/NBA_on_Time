@@ -1,10 +1,10 @@
-import { ProjektStalPage } from './app.po';
+import { NbaOnTimePage } from './app.po';
 
-describe('projekt-stal App', function() {
-  let page: ProjektStalPage;
+describe('nba-on-time App', function() {
+  let page: NbaOnTimePage;
 
   beforeEach(() => {
-    page = new ProjektStalPage();
+    page = new NbaOnTimePage();
   });
 
   it('should display message saying app works', () => {

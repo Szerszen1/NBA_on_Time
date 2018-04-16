@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class ProjektStalPage {
+export class NbaOnTimePage {
   navigateTo() {
     return browser.get('/');
   }
