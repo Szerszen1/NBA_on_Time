@@ -1,15 +1,6 @@
 <main role="main" class="container">
     <app-navbar (section)="setSection($event)"></app-navbar>
-    <div [ngSwitch]="section">
-        <div *ngSwitchCase="0" class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-        <div *ngSwitchCase="1">
-            <app-authentication></app-authentication>
-        </div>
+    <div>
+        <router-outlet></router-outlet>
     </div>
-
-
-
 </main>

@@ -11,13 +11,19 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { environment } from '../environments/environment';
-import { AuthenticationComponent } from './authentication/authentication.component';
+import { CoreModule } from './core/core.module';
+import { Routes, Router } from '@angular/router';
+import { AuthGuard } from './core/auth.guard';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { AuthService } from './core/auth.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNavbarComponent,
-    AuthenticationComponent,
+    UserProfileComponent,
 
   ],
   imports: [
@@ -27,9 +33,15 @@ import { AuthenticationComponent } from './authentication/authentication.compone
     AngularFireModule.initializeApp(environment.firebase, 'NBA-ON-TIME'), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    CoreModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
+ }
