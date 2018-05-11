@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-navbar.component.css']
 })
 export class AppNavbarComponent implements OnInit {
+
+  @Output()
+  section = new EventEmitter<number>();
+
+  emitSection(task: number) {
+    this.section.emit(task);
+  }
 
   constructor() { }
 
