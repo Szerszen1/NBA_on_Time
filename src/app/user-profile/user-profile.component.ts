@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthService } from '../core/auth.service';
 
 @Component({
@@ -8,6 +8,10 @@ import { AuthService } from '../core/auth.service';
 })
 export class UserProfileComponent implements OnInit {
 
+  @Input()
+  email: string;
+  @Input()
+  password: string;
   constructor(public auth: AuthService) { }
 
   ngOnInit() {

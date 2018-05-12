@@ -13,7 +13,7 @@ interface User {
   email: string;
   photoURL?: string;
   displayName?: string;
-  favoriteColor?: string;
+  favoriteTeam?: string;
 }
 
 
@@ -37,7 +37,12 @@ export class AuthService {
         })
   }
 
-
+  emailLogin(email: string, password: string) {
+    return this.afAuth.auth.signInWithEmailAndPassword(email, password)
+    .then((credential) => {
+      this.updateUserData(credential.user)
+    })
+  }
 
   googleLogin() {
     const provider = new firebase.auth.GoogleAuthProvider()
@@ -72,6 +77,28 @@ export class AuthService {
     return userRef.set(data, { merge: true })
 
   }
+
+  emailSignUp(email: string, password: string) {
+    return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+      .then(user => {
+        return this.updateUserData(user) // create initial user document
+      })
+      .catch(error => this.handleError(error) );
+  }
+
+  // Update properties on the user document
+  updateUser(user: User, data: any) {
+    return this.afs.doc(`users/${user.uid}`).update(data)
+  }
+
+
+
+  // If error, console log and notify user
+  private handleError(error) {
+    console.error(error)
+    // this.notify.update(error.message, 'error')
+  }
+
 
 
   signOut() {

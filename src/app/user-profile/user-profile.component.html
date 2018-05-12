@@ -5,8 +5,21 @@
 
 <!-- User NOT logged in -->
 <ng-template #guest>
-    <h3>Howdy, GUEST</h3>
+    <h3>Hallo, GUEST</h3>
     <p>Login to get started...</p>
+    <form (ngSubmit)="auth.emailLogin(email,password)">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" name="email" required [(ngModel)]="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required [(ngModel)]="password">
+        </div>
+
+        <button type="submit" class="btn btn-success">Log In</button>
+    </form>
 
     <button class="loginBtn loginBtn--google" (click)="auth.googleLogin()">Login with Google</button>
     <button class="loginBtn loginBtn--facebook" (click)="auth.fbLogin()">Login with Facebook</button>
@@ -17,7 +30,7 @@
 <!-- User logged in -->
 <ng-template #authenticated>
     <div *ngIf="auth.user | async as user">
-        <h3>Howdy, {{ user.displayName }}</h3>
+        <h3>Hallo, {{ user.displayName }}</h3>
         <p>UID: {{ user.uid }}</p>
         <p>Favorite Color: {{ user?.favoriteColor }} </p>
         <button (click)="auth.signOut()">Logout</button>
