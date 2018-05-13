@@ -32,7 +32,19 @@
     <div *ngIf="auth.user | async as user">
         <h3>Hallo, {{ user.displayName }}</h3>
         <p>UID: {{ user.uid }}</p>
-        <p>Favorite Color: {{ user?.favoriteColor }} </p>
+        <p>Favorite Team: {{ user?.favoriteTeam }} </p>
         <button (click)="auth.signOut()">Logout</button>
+        <form [formGroup]="detailForm" (ngSubmit)="setFavoriteTeam(user)">
+
+            <h3>Set your favorite team:</h3>
+
+            <label for="favoriteTeam">favorite team</label>
+            <input type="test" formControlName="favoriteTeam">
+
+
+            <button type="submit" [disabled]="!detailForm.valid">Submit</button>
+
+
+        </form>
     </div>
 </ng-template>

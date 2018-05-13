@@ -11,7 +11,6 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { environment } from '../environments/environment';
-import { CoreModule } from './core/core.module';
 import { Routes, Router } from '@angular/router';
 import { AuthGuard } from './core/auth.guard';
 import { UserProfileComponent } from './user-profile/user-profile.component';
@@ -36,7 +35,6 @@ import { UserFormComponent } from './user-form/user-form.component';
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
-    CoreModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],

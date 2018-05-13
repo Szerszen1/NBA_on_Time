@@ -11,7 +11,7 @@
             </li>
             <div class="nav-item" *ngIf="auth.user | async as user;else notLogged">
                 <li>
-                    <a class="nav-link disabled" routerLink="/user-profile" routerLinkActive="active">Logged as {{user.displayName}}</a>
+                    <a class="nav-link disabled" routerLink="/user-profile" routerLinkActive="active">Hallo {{user.displayName}}</a>
                 </li>
             </div>
         </ul>
