@@ -1,0 +1,48 @@
+<ng-container *ngIf="(auth.user | async) || {} as user">
+
+    <form [formGroup]="signupForm" *ngIf="!user.uid" (ngSubmit)="signup()">
+
+        <h3>New User Signup</h3>
+
+        <label for="email">Email</label>
+        <input type="email" class="form-control" formControlName="email">
+
+
+        <div *ngIf="email.invalid && email.dirty">
+            Your email doesn't look quite right...
+        </div>
+
+        <label for="password">Password</label>
+        <input type="password" class="form-control" formControlName="password" required>
+
+        <div *ngIf="password.invalid && password.touched">
+            Password must be between 6 and 24 chars and have at least one number
+        </div>
+
+        <div *ngIf="signupForm.valid">Form looks good! Let's do this.</div>
+
+        <button type="submit" class="btn btn-success" [disabled]="!signupForm.valid">Submit</button>
+
+
+    </form>
+
+
+
+    <form [formGroup]="detailForm" *ngIf="user.uid && !user.catchPhrase" (ngSubmit)="setCatchPhrase(user)">
+
+        <h3>Set your Catch Phrase</h3>
+
+        <label for="catchPhrase">CatchPhrase</label>
+        <input type="test" formControlName="catchPhrase">
+
+
+        <button type="submit" [disabled]="!detailForm.valid">Submit</button>
+
+
+    </form>
+
+    <p *ngIf="user.catchPhrase">
+        You have completed the form!
+    </p>
+
+</ng-container>

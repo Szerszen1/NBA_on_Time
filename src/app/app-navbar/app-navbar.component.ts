@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../core/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +8,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 })
 export class AppNavbarComponent implements OnInit {
 
-  @Output()
-  section = new EventEmitter<number>();
-
-  emitSection(task: number) {
-    this.section.emit(task);
-  }
-
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
   }

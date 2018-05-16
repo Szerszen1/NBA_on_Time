@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AngularFireModule } from 'angularfire2';
@@ -11,12 +11,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { environment } from '../environments/environment';
-import { CoreModule } from './core/core.module';
 import { Routes, Router } from '@angular/router';
 import { AuthGuard } from './core/auth.guard';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AuthService } from './core/auth.service';
+import { UserFormComponent } from './user-form/user-form.component';
 
 
 @NgModule({
@@ -24,6 +24,7 @@ import { AuthService } from './core/auth.service';
     AppComponent,
     AppNavbarComponent,
     UserProfileComponent,
+    UserFormComponent,
 
   ],
   imports: [
@@ -34,8 +35,8 @@ import { AuthService } from './core/auth.service';
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
-    CoreModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
