@@ -13,7 +13,7 @@ interface User {
   email: string;
   photoURL?: string;
   displayName?: string;
-  favoriteTeam?: string;
+  favoriteTeam?: Array<string>;
 }
 
 
@@ -90,7 +90,6 @@ export class AuthService {
   updateUser(user: User, data: any) {
     return this.afs.doc(`users/${user.uid}`).update(data)
   }
-
 
 
   // If error, console log and notify user
