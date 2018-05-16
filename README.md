@@ -14,6 +14,9 @@ Do zrealizowania powyższego zostanie użytych kilka narzędzi, między innymi: 
 https://trello.com/b/N8pHG4K3/projekt-spa
 
 ## Prototypy:
+<img src="./prototype1.png" alt="Prototype1"/>
+<img src="./prototype2.png" alt="Prototype2"/>
+<img src="./prototype3.png" alt="Prototype3"/>
 
 ## Raport pracy każdego członka zespołu:
 
