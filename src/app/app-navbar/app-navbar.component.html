@@ -4,14 +4,32 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-    <div class="collapse navbar-collapse" id="navbarsEampleDefault">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="font-weight:bold">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Teams</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Scores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tables</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">YouTube</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Favourites</a>
+            </li>
             <div class="nav-item" *ngIf="auth.user | async as user;else notLogged">
                 <li>
-                    <a class="nav-link disabled" routerLink="/user-profile" routerLinkActive="active">Hallo {{user.displayName}}</a>
+                    <a class="nav-link disabled" routerLink="/user-profile" routerLinkActive="active">Hello {{user.displayName}}</a>
                 </li>
             </div>
         </ul>
@@ -25,7 +43,7 @@
 <ng-template #notLogged>
     <div class="nav-item" class="collapse navbar-collapse" id="navbarsEampleDefault">
         <li>
-            <a class="nav-link" routerLink="/user-profile" routerLinkActive="active">Login</a>
+            <a class="nav-link" routerLink="/user-profile" routerLinkActive="active">SignIn</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" routerLink="/user-form" routerLinkActive="active">SignUp</a>
