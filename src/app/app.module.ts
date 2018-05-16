@@ -17,7 +17,9 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AuthService } from './core/auth.service';
 import { UserFormComponent } from './user-form/user-form.component';
-
+import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { UserFormComponent } from './user-form/user-form.component';
     AppNavbarComponent,
     UserProfileComponent,
     UserFormComponent,
-
+    YoutubePlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { UserFormComponent } from './user-form/user-form.component';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule, // imports firebase/storage only needed for storage features
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    YoutubePlayerModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
@@ -46,3 +49,5 @@ export class AppModule {
     console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
   }
  }
+
+ platformBrowserDynamic().bootstrapModule(AppModule);
