@@ -20,6 +20,11 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { NewsComponent } from './news/news.component';
+import { TablesComponent } from './tables/tables.component';
+import { ScoresComponent } from './scores/scores.component';
+import { TeamsComponent } from './teams/teams.component';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,11 @@ import { YoutubePlayerComponent } from './youtube-player/youtube-player.componen
     UserProfileComponent,
     UserFormComponent,
     YoutubePlayerComponent,
+    NewsComponent,
+    TablesComponent,
+    ScoresComponent,
+    TeamsComponent,
+    FavouritesComponent,
   ],
   imports: [
     BrowserModule,
