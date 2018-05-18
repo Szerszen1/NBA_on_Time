@@ -10,22 +10,22 @@
                 <a class="nav-link" href="#"><img src="/assets/images/Logo.png" height="30" width="30"/></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Teams</a>
+                <a class="nav-link" routerLink="/teams" routerLinkActive="active">Teams</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Scores</a>
+                <a class="nav-link" routerLink="/scores" routerLinkActive="active">Scores</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tables</a>
+                <a class="nav-link" routerLink="/tables" routerLinkActive="active">Tables</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" routerLink="/news" routerLinkActive="active">News</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">YouTube</a>
+                <a class="nav-link" routerLink="/youtube-player" routerLinkActive="active">YouTube</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Favourites</a>
+                <a class="nav-link" routerLink="/favourites" routerLinkActive="active">Favourites</a>
             </li>
             <div class="nav-item" *ngIf="auth.user | async as user;else notLogged">
                 <li>
