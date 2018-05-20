@@ -23,6 +23,10 @@ https://nba-be879.firebaseapp.com
 
 ## Raport pracy każdego członka zespołu:
 Jakub Szerszeń: 
-    -stworzenie szkieletu projektu(5godziny), dodanie firebase do aplikacji(5godziny), stworzenie logowaania przez facebook oraz konto google(20godziny), dodanie możliwości logowania przez e-mail(10godziny), dodawanie ulubionej drużyny(3,5godziny), naprawa błędów(7godzin). 
-    -Łączny czas wykonania pracy: 50,5 godziny
+    stworzenie szkieletu projektu(5godziny), dodanie firebase do aplikacji(5godziny), stworzenie logowania przez facebook oraz konto google(20godziny), dodanie możliwości logowania przez e-mail(10godziny), dodawanie ulubionej drużyny(3,5godziny), naprawa błędów(7godzin), tworzenie logo(2godziny)
+    Łączny czas wykonania pracy: 52,5 godziny
+
+Dominik Woźniczka:
+    stworzenie navbara i oprawy graficznej (10 godzin), tworzenie komponentów do wyświetlania zawartości aplikacji (3 godziny), stworzenie routingu i połączenie go do odpowiednich sekcji aplikacji (4,5 godzin), instalacja i implementacja youtube player jako podstawy do wyswietlania filmów w aplikacji (2,5 godziny), nanoszenie poprawek i "kosmetyka" (4,5 godziny), naprawa błędów i konfiguracja środowiska (7,5 godziny)
+    Łączny czas wykonania pracy: 32 godziny
 
