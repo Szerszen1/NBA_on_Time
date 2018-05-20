@@ -28,12 +28,12 @@
 
 
 
-    <form [formGroup]="detailForm" *ngIf="user.uid && !user.catchPhrase" (ngSubmit)="setCatchPhrase(user)">
+    <form [formGroup]="detailForm" *ngIf="user.uid && !user.displayName" (ngSubmit)="setdisplayName(user)">
 
-        <h3>Set your Catch Phrase</h3>
+        <h3>Set your Nickname</h3>
 
-        <label for="catchPhrase">CatchPhrase</label>
-        <input type="test" formControlName="catchPhrase">
+        <label for="displayName">Name</label>
+        <input type="test" formControlName="displayName">
 
 
         <button type="submit" [disabled]="!detailForm.valid">Submit</button>
@@ -41,7 +41,7 @@
 
     </form>
 
-    <p *ngIf="user.catchPhrase">
+    <p *ngIf="user.displayName">
         You have completed the form!
     </p>
 

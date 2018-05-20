@@ -10,8 +10,11 @@ Do zrealizowania powyższego zostanie użytych kilka narzędzi, między innymi: 
 2. Dominik Woźniczka
 3. Jakub Szerszeń
 
-## Syste zarządzania projektem:
+## System zarządzania projektem:
 https://trello.com/b/N8pHG4K3/projekt-spa
+
+##Aplikacja:
+https://nba-be879.firebaseapp.com
 
 ## Prototypy:
 <img src="./prototype1.png" alt="Prototype1"/>
@@ -19,4 +22,7 @@ https://trello.com/b/N8pHG4K3/projekt-spa
 <img src="./prototype3.png" alt="Prototype3"/>
 
 ## Raport pracy każdego członka zespołu:
+Jakub Szerszeń: 
+    -stworzenie szkieletu projektu(5godziny), dodanie firebase do aplikacji(5godziny), stworzenie logowaania przez facebook oraz konto google(20godziny), dodanie możliwości logowania przez e-mail(10godziny), dodawanie ulubionej drużyny(3,5godziny), naprawa błędów(7godzin). 
+    -Łączny czas wykonania pracy: 50,5 godziny
 

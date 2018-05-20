@@ -20,7 +20,7 @@ export class UserProfileComponent implements OnInit {
 
   ngOnInit() {
      this.detailForm = this.fb.group({
-    'favoriteTeam': ['',  ]
+    'favoriteTeam': [ ]
     });
   }
   get favoriteTeam() { return this.detailForm.get('favoriteTeam') }
