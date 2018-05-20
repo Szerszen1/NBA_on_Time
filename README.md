@@ -29,4 +29,8 @@ Jakub Szerszeń:
 Dominik Woźniczka:
     stworzenie navbara i oprawy graficznej (10 godzin), tworzenie komponentów do wyświetlania zawartości aplikacji (3 godziny), stworzenie routingu i połączenie go do odpowiednich sekcji aplikacji (4,5 godzin), instalacja i implementacja youtube player jako podstawy do wyswietlania filmów w aplikacji (2,5 godziny), nanoszenie poprawek i "kosmetyka" (4,5 godziny), naprawa błędów i konfiguracja środowiska (7,5 godziny)
     Łączny czas wykonania pracy: 32 godziny
+    
+Katarzyna Zdeb:
+   stworzenie prototypu projektu (5 godzin) szukanie rozwiązania problemu pobierania informacji z yahoo sports(17 godzin) stworzenie serwisu http i próby odczytywania danych(5 godzin) 
+   Łączny czas pracy:  27 godzin
 
