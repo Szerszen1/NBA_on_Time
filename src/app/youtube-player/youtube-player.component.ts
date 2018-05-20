@@ -12,7 +12,7 @@ export class YoutubePlayerComponent implements OnInit {
   ngOnInit() {
   }
   player: YT.Player;
-  private id: string = 'k6RMYTgWk-8';
+  id: string = 'k6RMYTgWk-8';
 
 	savePlayer (player) {
     this.player = player;
