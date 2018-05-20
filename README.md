@@ -31,6 +31,6 @@ Dominik Woźniczka:
     Łączny czas wykonania pracy: 32 godziny
     
 Katarzyna Zdeb:
-   stworzenie prototypu projektu (5 godzin) szukanie rozwiązania problemu pobierania informacji z yahoo sports(17 godzin) stworzenie serwisu http i próby odczytywania danych(5 godzin) 
+   stworzenie prototypu projektu (5 godzin) szukanie rozwiązania problemu pobierania informacji z api nba(17 godzin) próby stworzenie serwisu http i odczytywania danych(5 godzin) 
    Łączny czas pracy:  27 godzin
 
