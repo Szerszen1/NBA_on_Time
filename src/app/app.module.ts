@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -25,6 +25,8 @@ import { TablesComponent } from './tables/tables.component';
 import { ScoresComponent } from './scores/scores.component';
 import { TeamsComponent } from './teams/teams.component';
 import { FavouritesComponent } from './favourites/favourites.component';
+import { LakersComponent } from './teams/lakers/lakers.component';
+import { HttpService } from './http.service';
 
 @NgModule({
   declarations: [
@@ -38,11 +40,12 @@ import { FavouritesComponent } from './favourites/favourites.component';
     ScoresComponent,
     TeamsComponent,
     FavouritesComponent,
+    LakersComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase, 'NBA-ON-TIME'), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
@@ -51,7 +54,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
     ReactiveFormsModule,
     YoutubePlayerModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
