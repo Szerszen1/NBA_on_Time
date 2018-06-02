@@ -3,6 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 body {
     padding-top: 5rem;
+    background-image: url("NBA2.jpg");
     background-size:100%;
     color: white;
 }

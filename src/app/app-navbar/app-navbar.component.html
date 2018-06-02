@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #A50000;">
+<nav class="navbar navbar-light " style="background-color: #A50000;">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
       </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="font-weight:bold">
-        <ul class="navbar-nav mr-auto">
+      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-toggleable-xs" id="navbarsExampleDefault">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#"><img src="/assets/images/Logo.png" height="30" width="30"/></a>
             </li>
