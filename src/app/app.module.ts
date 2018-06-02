@@ -27,6 +27,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { LakersComponent } from './teams/lakers/lakers.component';
 import { HttpService } from './http.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { HttpService } from './http.service';
     LakersComponent,
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpClientModule,
