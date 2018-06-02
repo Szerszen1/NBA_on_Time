@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpParams, HttpClient, HttpHeaders } from '@angular/common/http';
+import { MySportsFeeds} from 'mysportsfeeds-node';
 
- const headers = new HttpHeaders().set('Szerszen1', 'szerszen1');
+const _headers = new HttpHeaders();
+const headers = _headers.append('Authorization', 'Basic ' + btoa('Szerszen1' + ':' + 'szerszen1'));
+
+
 
  @Injectable()
 export class HttpService {
