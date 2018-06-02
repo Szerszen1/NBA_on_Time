@@ -1,3 +1,5 @@
+import { HttpService } from './../http.service';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+  }
+
+  getCos() {
+    this.httpService.get().subscribe(cos => {
+      console.log(cos)
+    });
   }
 
 }

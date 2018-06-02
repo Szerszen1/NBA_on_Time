@@ -1,10 +1,9 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #A50000;">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-light" style="background-color: #A50000;">
+    <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
       </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="font-weight:bold">
+      <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#"><img src="/assets/images/Logo.png" height="30" width="30"/></a>
@@ -33,15 +32,11 @@
                 </li>
             </div>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
 </nav>
 
 <ng-template #notLogged>
-    <div class="nav-item" class="collapse navbar-collapse" id="navbarsEampleDefault">
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-toggleable-xs" id="navbarsExampleDefault">
         <li>
             <a class="nav-link" routerLink="/user-profile" routerLinkActive="active">SignIn</a>
         </li>

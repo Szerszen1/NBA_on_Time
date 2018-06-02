@@ -13,7 +13,7 @@ Do zrealizowania powyższego zostanie użytych kilka narzędzi, między innymi: 
 ## System zarządzania projektem:
 https://trello.com/b/N8pHG4K3/projekt-spa
 
-##Aplikacja:
+## Aplikacja:
 https://nba-be879.firebaseapp.com
 
 ## Prototypy:

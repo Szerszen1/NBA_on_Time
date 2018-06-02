@@ -9,16 +9,17 @@ export class YoutubePlayerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
   player: YT.Player;
   id: string = 'k6RMYTgWk-8';
 
+  ngOnInit() {
+  }
+
 	savePlayer (player) {
     this.player = player;
-    console.log('player instance', player)
+    console.log('player instance', player);
 	}
-  onStateChange(event){
+  onStateChange(event) {
     console.log('player state', event.data);
   }
 
