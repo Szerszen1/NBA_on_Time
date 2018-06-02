@@ -27,6 +27,7 @@
         "angularfire2": "^5.0.0-rc.7",
         "bootstrap": "^4.0.0-beta",
         "core-js": "^2.4.1",
+        "ember-cli-cors": "0.0.2",
         "firebase": "^4.13.1",
         "jquery": "^3.2.1",
         "popper.js": "^1.12.5",
