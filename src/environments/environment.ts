@@ -12,6 +12,5 @@ export const environment = {
     projectId: 'nba-be879',
     storageBucket: 'nba-be879.appspot.com',
     messagingSenderId: '711128714813'
-
   }
 };
