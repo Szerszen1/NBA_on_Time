@@ -1,6 +1,6 @@
 import { HttpService } from './../http.service';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-teams',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teams.component.css']
 })
 export class TeamsComponent implements OnInit {
+  public players: Players[];
 
   constructor(private httpService: HttpService) { }
 
@@ -20,4 +21,19 @@ export class TeamsComponent implements OnInit {
     });
   }
 
+}
+
+export interface Players {
+  ID?: string;
+  LastName?: string;
+  FirstName?: string;
+  JerseyNumber?: string;
+  Position?: string;
+  Height?: string;
+  Weight?: string;
+  BirthDate?: string;
+  Age?: string;
+  BirthCity?: string;
+  BirthCountry?: string;
+  IsRookie?: string;
 }
