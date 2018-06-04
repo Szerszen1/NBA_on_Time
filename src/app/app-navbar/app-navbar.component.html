@@ -1,13 +1,11 @@
-<nav class="navbar navbar-light" style="background-color: #A50000;">
+<nav class="navbar navbar-light fixed-top" style="background-color: #A50000;">
     <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        &#9776;
+        <span class="navbar-toggler-icon"></span>
+        <img src="/assets/images/Logo.png" height="80" width="100"/>
       </button>
 
-      <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse collapse" id="navbarsExampleDefault">
+      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse " id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="/assets/images/Logo.png" height="30" width="30"/></a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/teams" routerLinkActive="active">Teams</a>
             </li>
