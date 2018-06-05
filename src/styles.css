@@ -2,15 +2,27 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 body {
-    color: white;
     background: url("NBA2.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: white;
+<<<<<<< HEAD
+    background: url("NBA2.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+=======
+>>>>>>> 3b4bf8558b67ffba5941b031a4d1f480e030af33
 }
 
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b4bf8558b67ffba5941b031a4d1f480e030af33
