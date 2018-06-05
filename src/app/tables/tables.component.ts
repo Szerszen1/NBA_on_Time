@@ -10,13 +10,22 @@ export class TablesComponent implements OnInit {
 
   constructor(private httpService: HttpService) { }
 
+  /*Division number:
+  1 =
+  */
+
   ngOnInit() {
   }
 
-  getCos() {
-    return this.httpService.getEasternAtlanticTeamStandings().subscribe(results => {
+  getCos1() {
+    return this.httpService.getDivisionTeamStandings(0).subscribe(results => {
       console.log(results);
     });
+  }
+  getCos() {
+    return this.httpService.getDivision().subscribe(results => {
+      console.log(results);
+    })
   }
 
 }
