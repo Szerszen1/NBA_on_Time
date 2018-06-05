@@ -10,7 +10,8 @@ import { Rosterplayers, Playerentry } from '../models';
 })
 export class TeamsComponent implements OnInit {
 
-  playerentry$: Playerentry[];
+  playerentry$: Observable<Playerentry[]>;
+  teamName = 'bos';
 
   constructor(private httpService: HttpService) { }
 
@@ -18,10 +19,7 @@ export class TeamsComponent implements OnInit {
   }
 
   getCos() {
-    this.httpService.get().subscribe(response => {
-      this.playerentry$ = response;
-      console.log(response);
-    });
+    this.playerentry$ = this.httpService.get(this.teamName);
   }
 
 

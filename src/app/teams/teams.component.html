@@ -2,3 +2,6 @@
     teams works!
 </p>
 <button (click)="getCos()">getCos</button>
+<div *ngFor="let p of playerentry$ | async">
+    <p>{{p.player.FirstName}} {{p.player.LastName}}</p>
+</div>
