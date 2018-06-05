@@ -2,12 +2,12 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 body {
+    color: white;
     background: url("NBA2.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: white;
 }
 
 .starter-template {

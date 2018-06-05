@@ -23,12 +23,7 @@ export class HttpService {
   getDivisionTeamStandings(nr: number): Observable<Teamentry[]> {
     return this.http.get<TeamStending>(
       ' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
-     {headers}).map(response => response.divisionteamstandings.division[0].teamentry as Teamentry[]);
-  }
-
-  getDivision() {
-    return this.http.get(' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
-     {headers})
+     {headers}).map(response => response.divisionteamstandings.division[nr].teamentry as Teamentry[]);
   }
 
 }
