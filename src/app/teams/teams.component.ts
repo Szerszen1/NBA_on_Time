@@ -19,7 +19,7 @@ export class TeamsComponent implements OnInit {
   }
 
   getCos() {
-    this.playerentry$ = this.httpService.get(this.teamName);
+    this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
 

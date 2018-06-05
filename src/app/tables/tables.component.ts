@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-tables',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+  }
+
+  getCos() {
+    return this.httpService.getEasternAtlanticTeamStandings().subscribe(results => {
+      console.log(results);
+    });
   }
 
 }
