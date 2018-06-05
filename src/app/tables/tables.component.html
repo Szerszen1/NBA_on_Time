@@ -1,4 +1,5 @@
-<p>
-    tables works!
-</p>
-<button (click)="getCos()">getDivisionTeamStandings</button>
+<button (click)="active()">Active</button>
+<div>Eastern/Atlantic</div>
+<div *ngFor="let p of easternAtlantic$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>

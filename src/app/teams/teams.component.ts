@@ -18,10 +18,9 @@ export class TeamsComponent implements OnInit {
   ngOnInit() {
   }
 
-  getCos() {
-    this.playerentry$ = this.httpService.getRoster(this.teamName);
+  active() {
+     this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
-
 
 }
 

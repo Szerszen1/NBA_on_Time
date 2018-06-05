@@ -1,5 +1,7 @@
+import { Observable } from 'rxjs/Observable';
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
+import { Teamentry } from '../models';
 
 @Component({
   selector: 'app-tables',
@@ -7,6 +9,13 @@ import { HttpService } from '../http.service';
   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent implements OnInit {
+
+  easternAtlantic$: Observable<Teamentry[]>
+  easternCentral$: Observable<Teamentry[]>
+  easternSoutheast$: Observable<Teamentry[]>
+  westernNorthwest$: Observable<Teamentry[]>
+  westernPacific$:  Observable<Teamentry[]>
+  westernSouthwest$:  Observable<Teamentry[]>
 
   constructor(private httpService: HttpService) { }
 
@@ -22,15 +31,14 @@ export class TablesComponent implements OnInit {
   ngOnInit() {
   }
 
-  getCos1() {
-    return this.httpService.getDivisionTeamStandings(0).subscribe(results => {
-      console.log(results);
-    });
-  }
-  getCos() {
-    return this.httpService.getDivision().subscribe(results => {
-      console.log(results);
-    })
+  active() {
+    this.easternAtlantic$ = this.httpService.getDivisionTeamStandings(0);
+    this.easternCentral$ = this.httpService.getDivisionTeamStandings(1);
+    this.easternSoutheast$ = this.httpService.getDivisionTeamStandings(2);
+    this.westernNorthwest$ = this.httpService.getDivisionTeamStandings(3);
+    this.westernPacific$ = this.httpService.getDivisionTeamStandings(4);
+    this.westernSouthwest$ = this.httpService.getDivisionTeamStandings(5);
+
   }
 
 }
