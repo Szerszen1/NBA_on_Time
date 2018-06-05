@@ -11,7 +11,12 @@ export class TablesComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   /*Division number:
-  1 =
+  0 = Eastern/Atlantic
+  1 = Eastern/Central
+  2 = Eastern/Southeast
+  3 = Western/Northwest
+  4 = Western/Pacific
+  5 = Western/Southwest
   */
 
   ngOnInit() {
