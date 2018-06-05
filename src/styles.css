@@ -3,17 +3,14 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 body {
     color: white;
-}
-
-.starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
-}
-
-html {
     background: url("NBA2.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
