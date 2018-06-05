@@ -20,10 +20,15 @@ export class HttpService {
      {headers}).map(response => response.rosterplayers.playerentry as Playerentry[]);
   }
 
-  getEasternAtlanticTeamStandings(): Observable<Teamentry[]> {
+  getDivisionTeamStandings(nr: number): Observable<Teamentry[]> {
     return this.http.get<TeamStending>(
       ' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
      {headers}).map(response => response.divisionteamstandings.division[0].teamentry as Teamentry[]);
+  }
+
+  getDivision() {
+    return this.http.get(' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
+     {headers})
   }
 
 }
