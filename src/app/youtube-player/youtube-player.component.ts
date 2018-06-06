@@ -11,14 +11,14 @@ export class YoutubePlayerComponent implements OnInit {
   someItem="<h1>Sth</h1>"
   videoList = [
     {
-    name: "Item 1",
-    slug: "item-1",
-    embed: `7NUTAFTljyA`,
+      name: "Item 1",
+      slug: "item-1",
+      embed: `_zUeyz5Qn9QG-WmV`,
     },
     {
-    name: "item 2",
-    slug: "item-2",
-    embed: `7NUTAFTljyA`,
+      name: "item 2",
+      slug: "item-2",
+      embed: `7NUTAFTljyA`,
     },
     {
       name: "item 3",
@@ -37,8 +37,18 @@ export class YoutubePlayerComponent implements OnInit {
 }
 
 
-/*  player: YT.Player;
-  channelId: 'UCWJ2lWNubArHWmf3FIHbfcQ';
+/* import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-youtube-player',
+  templateUrl: './youtube-player.component.html',
+  styleUrls: ['./youtube-player.component.css']
+})
+export class YoutubePlayerComponent implements OnInit {
+
+  constructor() { }
+
+  player: YT.Player;
   id: string = 'k6RMYTgWk-8';
 
   ngOnInit() {
@@ -51,5 +61,8 @@ export class YoutubePlayerComponent implements OnInit {
   onStateChange(event) {
     console.log('player state', event.data);
   }
+
+}
+
 */
 

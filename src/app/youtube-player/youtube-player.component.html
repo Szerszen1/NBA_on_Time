@@ -1,8 +1,8 @@
 <h1>{{title}}</h1>
 <div *ngFor='let item of videoList'>
-    <a href='videos/{{item.slug}}'>{{item.name}}</a>
-    <div [innerHTML]='item.embed'></div>
-    <div [innerHTML]= 'someItem'></div>
+    <youtube-player>{{item.slug}}</youtube-player>
+    <!--<div [innerHTML]='item.embed'></div>
+    <div [innerHTML]= 'someItem'></div>-->
     <div> 
       <iframe [src]="getEmbedUrl(item)" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
