@@ -1,7 +1,5 @@
-<p>
-    teams works!
-</p>
-<button (click)="getCos()">getRosters</button>
+<button (click)="active()">Active</button>
+<h1>Team Roster:</h1>
 <div *ngFor="let p of playerentry$ | async">
     <p>{{p.player.FirstName}} {{p.player.LastName}}</p>
 </div>
