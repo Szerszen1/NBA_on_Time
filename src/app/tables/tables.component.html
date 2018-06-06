@@ -3,3 +3,23 @@
 <div *ngFor="let p of easternAtlantic$ | async">
     <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
 </div>
+<div>Eastern/Central</div>
+<div *ngFor="let p of easternCentral$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>
+<div>Eastern/Southeast</div>
+<div *ngFor="let p of easternSoutheast$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>
+<div>Western/Northwest</div>
+<div *ngFor="let p of westernNorthwest$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>
+<div>Western/Pacific</div>
+<div *ngFor="let p of westernPacific$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>
+<div>Western/Southwest</div>
+<div *ngFor="let p of westernSouthwest$ | async">
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+</div>
