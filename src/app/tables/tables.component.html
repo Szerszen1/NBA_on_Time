@@ -1,7 +1,7 @@
 <button (click)="active()">Active</button>
 <div>Eastern/Atlantic</div>
 <div *ngFor="let p of easternAtlantic$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}}</p>
 </div>
 <div>Eastern/Central</div>
 <div *ngFor="let p of easternCentral$ | async">
