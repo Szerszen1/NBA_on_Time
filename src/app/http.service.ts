@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Playerentry, Rosterplayers, Roster, Teamentry, TeamStending } from './models';
+import { Playerentry, Rosterplayers, Roster, Teamentry, TeamStending, Games, GameScore } from './models';
 
 
 const _headers = new HttpHeaders();
@@ -24,6 +24,12 @@ export class HttpService {
     return this.http.get<TeamStending>(
       ' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
      {headers}).map(response => response.divisionteamstandings.division[nr].teamentry as Teamentry[]);
+  }
+
+  getScoreboard(date: string): Observable<GameScore[]> {
+    return this.http.get<Games>(
+      '  https://api.mysportsfeeds.com/v1.2/pull/nba/current/scoreboard.json?fordate=' + date,
+     {headers}).map(response => response.scoreboard.gameScore as GameScore[]);
   }
 
 }
