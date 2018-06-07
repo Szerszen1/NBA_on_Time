@@ -1,25 +1,145 @@
 <button (click)="active()">Active</button>
-<div>Eastern/Atlantic</div>
-<div *ngFor="let p of easternAtlantic$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}}</p>
+<h3>Eastern/Atlantic</h3>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark table-hover">
+
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">City</th>
+                <th scope="col">Name</th>
+                <th scope="col">Abbreviation</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+                <tr *ngFor="let p of easternAtlantic$ | async">
+                    <td>{{p.rank}}</td>
+                    <td>{{p.team.City}}</td>
+                    <td>{{p.team.Name}}</td>
+                    <td>{{p.team.Abbreviation}}</td>
+                </tr>
+            </tbody>
+
+    </table>
 </div>
-<div>Eastern/Central</div>
-<div *ngFor="let p of easternCentral$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+<h3>Eastern/Central</h3>
+<div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Abbreviation</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr *ngFor="let p of easternCentral$ | async">
+                            <td>{{p.rank}}</td>
+                            <td>{{p.team.City}}</td>
+                            <td>{{p.team.Name}}</td>
+                            <td>{{p.team.Abbreviation}}</td>
+                        </tr>
+                    </tbody>
+        
+            </table>
 </div>
-<div>Eastern/Southeast</div>
-<div *ngFor="let p of easternSoutheast$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+<h3>Eastern/Southeast</h3>
+<div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Abbreviation</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr *ngFor="let p of easternSoutheast$ | async">
+                            <td>{{p.rank}}</td>
+                            <td>{{p.team.City}}</td>
+                            <td>{{p.team.Name}}</td>
+                            <td>{{p.team.Abbreviation}}</td>
+                        </tr>
+                    </tbody>
+        
+            </table>
 </div>
-<div>Western/Northwest</div>
-<div *ngFor="let p of westernNorthwest$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+<h3>Western/Northwest</h3>
+<div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Abbreviation</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr *ngFor="let p of westernNorthwest$ | async">
+                            <td>{{p.rank}}</td>
+                            <td>{{p.team.City}}</td>
+                            <td>{{p.team.Name}}</td>
+                            <td>{{p.team.Abbreviation}}</td>
+                        </tr>
+                    </tbody>
+        
+            </table>
 </div>
-<div>Western/Pacific</div>
-<div *ngFor="let p of westernPacific$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+<h3>Western/Pacific</h3>
+<div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Abbreviation</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr *ngFor="let p of westernPacific$ | async">
+                            <td>{{p.rank}}</td>
+                            <td>{{p.team.City}}</td>
+                            <td>{{p.team.Name}}</td>
+                            <td>{{p.team.Abbreviation}}</td>
+                        </tr>
+                    </tbody>
+        
+            </table>
 </div>
-<div>Western/Southwest</div>
-<div *ngFor="let p of westernSouthwest$ | async">
-    <p>{{p.rank}}: {{p.team.City}} {{p.team.Name}} </p>
+<h3>Western/Southwest</h3>
+<div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Abbreviation</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr *ngFor="let p of westernSouthwest$ | async">
+                            <td>{{p.rank}}</td>
+                            <td>{{p.team.City}}</td>
+                            <td>{{p.team.Name}}</td>
+                            <td>{{p.team.Abbreviation}}</td>
+                        </tr>
+                    </tbody>
+        
+            </table>
 </div>
