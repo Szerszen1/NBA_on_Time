@@ -38,7 +38,9 @@ export class TablesComponent implements OnInit {
     this.westernNorthwest$ = this.httpService.getDivisionTeamStandings(3);
     this.westernPacific$ = this.httpService.getDivisionTeamStandings(4);
     this.westernSouthwest$ = this.httpService.getDivisionTeamStandings(5);
-
+    return this.httpService.getDivisionTeamStandings(4).subscribe(results =>{
+      console.log(results);
+    })
   }
 
 }
