@@ -28,6 +28,34 @@ import { FavouritesComponent } from './favourites/favourites.component';
 import { LakersComponent } from './teams/lakers/lakers.component';
 import { HttpService } from './http.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RocketsComponent } from './teams/rockets/rockets.component';
+import { ClippersComponent } from './teams/clippers/clippers.component';
+import { JazzComponent } from './teams/jazz/jazz.component';
+import { GrizzliesComponent } from './teams/grizzlies/grizzlies.component';
+import { BucksComponent } from './teams/bucks/bucks.component';
+import { HawksComponent } from './teams/hawks/hawks.component';
+import { KingsComponent } from './teams/kings/kings.component';
+import { NuggetsComponent } from './teams/nuggets/nuggets.component';
+import { MavericksComponent } from './teams/mavericks/mavericks.component';
+import { BullsComponent } from './teams/bulls/bulls.component';
+import { HeatComponent } from './teams/heat/heat.component';
+import { ThunderComponent } from './teams/thunder/thunder.component';
+import { PelicansComponent } from './teams/pelicans/pelicans.component';
+import { CavaliersComponent } from './teams/cavaliers/cavaliers.component';
+import { HornetsComponent } from './teams/hornets/hornets.component';
+import { KnicksComponent } from './teams/knicks/knicks.component';
+import { SunsComponent } from './teams/suns/suns.component';
+import { TimberwolvesComponent } from './teams/timberwolves/timberwolves.component';
+import { PacersComponent } from './teams/pacers/pacers.component';
+import { MagicComponent } from './teams/magic/magic.component';
+import { NetsComponent } from './teams/nets/nets.component';
+import { WarriorsComponent } from './teams/warriors/warriors.component';
+import { TrailblazersComponent } from './teams/trailblazers/trailblazers.component';
+import { SpursComponent } from './teams/spurs/spurs.component';
+import { PistonsComponent } from './teams/pistons/pistons.component';
+import { WizardsComponent } from './teams/wizards/wizards.component';
+import { RaptorsComponent } from './teams/raptors/raptors.component';
+import { PhiladelphiaComponent } from './teams/philadelphia/philadelphia.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +70,34 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TeamsComponent,
     FavouritesComponent,
     LakersComponent,
+    RocketsComponent,
+    ClippersComponent,
+    JazzComponent,
+    GrizzliesComponent,
+    BucksComponent,
+    HawksComponent,
+    KingsComponent,
+    NuggetsComponent,
+    MavericksComponent,
+    BullsComponent,
+    HeatComponent,
+    ThunderComponent,
+    PelicansComponent,
+    CavaliersComponent,
+    HornetsComponent,
+    KnicksComponent,
+    SunsComponent,
+    TimberwolvesComponent,
+    PacersComponent,
+    MagicComponent,
+    NetsComponent,
+    WarriorsComponent,
+    TrailblazersComponent,
+    SpursComponent,
+    PistonsComponent,
+    WizardsComponent,
+    RaptorsComponent,
+    PhiladelphiaComponent,
   ],
   imports: [
     NgbModule.forRoot(),
