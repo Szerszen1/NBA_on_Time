@@ -10,17 +10,11 @@ import { Rosterplayers, Playerentry } from '../models';
 })
 export class TeamsComponent implements OnInit {
 
-  playerentry$: Observable<Playerentry[]>;
-  teamName = 'bos';
-
-  constructor(private httpService: HttpService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  active() {
-     this.playerentry$ = this.httpService.getRoster(this.teamName);
-  }
 
 }
 
