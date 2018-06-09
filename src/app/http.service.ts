@@ -16,19 +16,19 @@ export class HttpService {
 
   getRoster(team: string): Observable<Playerentry[]> {
     return this.http.get<Roster>(
-      ' https://api.mysportsfeeds.com/v1.2/pull/nba/current/roster_players.json?fordate=20180604&team=' + team,
+      ' https://api.mysportsfeeds.com/v1.2/pull/nba/2017-2018-regular/roster_players.json?fordate=20180604&team=' + team,
      {headers}).map(response => response.rosterplayers.playerentry as Playerentry[]);
   }
 
   getDivisionTeamStandings(nr: number): Observable<Teamentry[]> {
     return this.http.get<TeamStending>(
-      ' https://api.mysportsfeeds.com/v1.2/pull/nba/current/division_team_standings.json ',
+      ' https://api.mysportsfeeds.com/v1.2/pull/nba/2017-2018-regular/division_team_standings.json ',
      {headers}).map(response => response.divisionteamstandings.division[nr].teamentry as Teamentry[]);
   }
 
   getScoreboard(date: string): Observable<GameScore[]> {
     return this.http.get<Games>(
-      '  https://api.mysportsfeeds.com/v1.2/pull/nba/current/scoreboard.json?fordate=' + date,
+      '  https://api.mysportsfeeds.com/v1.2/pull/nba/2017-2018-regular/scoreboard.json?fordate=' + date,
      {headers}).map(response => response.scoreboard.gameScore as GameScore[]);
   }
 

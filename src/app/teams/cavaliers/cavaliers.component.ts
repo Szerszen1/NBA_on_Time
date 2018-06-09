@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Playerentry } from '../../models';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-cavaliers',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CavaliersComponent implements OnInit {
 
-  constructor() { }
+  playerentry$: Observable<Playerentry[]>;
+  teamName = 'cleveland-cavaliers';
+
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+  }
+
+  active() {
+     this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
 }
