@@ -9,9 +9,9 @@ import { HttpService } from '../../http.service';
   styleUrls: ['./bucks.component.css']
 })
 export class BucksComponent implements OnInit {
-  
+
   playerentry$: Observable<Playerentry[]>;
-  teamName = 'bos';// do zmiany
+  teamName = 'milwaukee-bucks';
 
   constructor(private httpService: HttpService) { }
 

@@ -1,3 +1,38 @@
-<p>
-  jazz works!
-</p>
+<button (click)="active()">Active</button>
+<img src="/assets/images/jazz.png" height="60" width="80" />
+<h1>Team Roster:</h1>
+<div class="table-responsive">
+    <table class="table table-bordered table-dark table-hover">
+
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Jersey Number</th>
+                <th scope="col">Position</th>
+                <th scope="col">Height</th>
+                <th scope="col">Weight</th>
+                <th scope="col">BirthDate</th>
+                <th scope="col">Age</th>
+                <th scope="col">BirthCity</th>
+                <th scope="col">BirthCountry</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let p of playerentry$ | async">
+                <td>{{p.player.FirstName}}</td>
+                <td>{{p.player.LastName}}</td>
+                <td>{{p.player.JerseyNumber}}</td>
+                <td>{{p.player.Position}}</td>
+                <td>{{p.player.Height}}</td>
+                <td>{{p.player.Weight}}</td>
+                <td>{{p.player.BirthDate}}</td>
+                <td>{{p.player.Age}}</td>
+                <td>{{p.player.BirthCity}}</td>
+                <td>{{p.player.BirthCountry}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
