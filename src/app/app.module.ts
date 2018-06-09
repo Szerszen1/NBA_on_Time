@@ -28,6 +28,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
 import { LakersComponent } from './teams/lakers/lakers.component';
 import { HttpService } from './http.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CelticsComponent } from './teams/celtics/celtics.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TeamsComponent,
     FavouritesComponent,
     LakersComponent,
+    CelticsComponent,
   ],
   imports: [
     NgbModule.forRoot(),
