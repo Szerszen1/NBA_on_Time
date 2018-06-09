@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { GameScore } from './../models';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import { HttpService } from '../http.service';
+import { Observable } from 'rxjs/Observable';
 
 const now = new Date();
 
@@ -10,19 +13,34 @@ const now = new Date();
 })
 export class ScoresComponent implements OnInit {
 
-  constructor() { }
+  model: NgbDateStruct;
+  date: {year: number, month: number};
+  scoreBoard$:  Observable<GameScore[]>
+  month: string;
+  day: string;
+  dateValid: string;
+
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
   }
 
-}
+  active() {
+    if (this.model.day < 10) {
+      this.day = '0' + this.model.day;
+    } else {
+      this.day = '' + this.model.day;
+    }
+    if (this.model.month < 10) {
+      this.month = '0' + this.model.month
+    } else {
+      this.month = '' + this.model.month
+    }
+    this.dateValid = '' + this.model.year + this.month + this.day;
 
-export class NgbdDatepickerBasic {
-
-  model: NgbDateStruct;
-  date: {year: number, month: number};
-
-  selectToday() {
+    this.scoreBoard$ = this.httpService.getScoreboard(this.dateValid);
+  }
+   selectToday() {
     this.model = {year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate()};
   }
 }

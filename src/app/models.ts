@@ -43,7 +43,7 @@ export interface Roster {
 export interface Details {
   category?: string;
   abbreviation?: string;
-  text?: string;
+  '#text'?: string;
 }
 
 export interface Stats {
@@ -137,3 +137,46 @@ export interface TeamStending {
   divisionteamstandings: DivisionTeamStandings;
 }
 
+// Interface for Scoreboard
+
+export interface Games {
+  scoreboard: Scoreboard;
+}
+
+export interface Scoreboard {
+  lastUpdatedOn: string;
+  gameScore: GameScore[]
+}
+
+export interface GameScore {
+  game: Game;
+  isUnplayed: string;
+  isInProgress: string;
+  isCompleted: string;
+  awayScore: string;
+  homeScore: string;
+  quarterSummary: QuarterSummary;
+}
+
+export interface Game {
+  ID: string;
+  scheduleStatus: string;
+  originalDate: string;
+  originalTime: string;
+  delayedOrPostponedReason: string;
+  date: string;
+  time: string;
+  awayTeam: Team;
+  homeTeam: Team;
+  location: string;
+}
+
+export interface QuarterSummary {
+  quarter: Quarter;
+}
+
+export interface Quarter {
+  number: string;
+  awayScore: string;
+  homeScore: string;
+}
