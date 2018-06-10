@@ -28,7 +28,7 @@ export class HttpService {
 
   getScoreboard(date: string): Observable<GameScore[]> {
     return this.http.get<Games>(
-      '  https://api.mysportsfeeds.com/v1.2/pull/nba/2017-2018-regular/scoreboard.json?fordate=' + date,
+      '  https://api.mysportsfeeds.com/v1.2/pull/nba/latest/scoreboard.json?fordate=' + date,
      {headers}).map(response => response.scoreboard.gameScore as GameScore[]);
   }
 
