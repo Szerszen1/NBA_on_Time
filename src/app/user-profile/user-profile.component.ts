@@ -30,7 +30,7 @@ export class UserProfileComponent implements OnInit {
   get favoriteTeam() { return this.detailForm.get('favoriteTeam') }
 
   setFavoriteTeam(user) {
-    return this.auth.updateUser(user, { favoriteTeam:  this.favoriteTeam.value })
+    return this.auth.updateUser(user, { favoriteTeam:  this.radioGroupForm.value['model2'] })
   }
 
 }
