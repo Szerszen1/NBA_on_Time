@@ -12,6 +12,8 @@ export class WizardsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'was';
+  ww:string ='pAtDS3_dEWs';
+  player: YT.Player;
 
   constructor(private httpService: HttpService) { }
 

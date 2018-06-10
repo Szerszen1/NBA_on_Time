@@ -32,6 +32,10 @@
                 <td>{{p.player.BirthCountry}}</td>
             </tr>
         </tbody>
-
     </table>
+    <youtube-player
+        [videoId]="cb"
+        (ready)="savePlayer($event)"
+        (change)="onStateChange($event)"
+    ></youtube-player>
 </div>

@@ -34,4 +34,10 @@
         </tbody>
 
     </table>
+
+    <youtube-player
+        [videoId]="mb"
+        (ready)="savePlayer($event)"
+        (change)="onStateChange($event)"
+    ></youtube-player>
 </div>

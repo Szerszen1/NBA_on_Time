@@ -12,11 +12,21 @@ export class CavaliersComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'cleveland-cavaliers';
+  cc: string = 'hfdOr3pb3u8';
+  player: YT.Player;
 
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     this.playerentry$ = this.httpService.getRoster(this.teamName);
+  }
+  
+  savePlayer (player) {
+    this.player = player;
+    console.log('player instance', player);
+	}
+  onStateChange(event) {
+    console.log('player state', event.data);
   }
 
 }

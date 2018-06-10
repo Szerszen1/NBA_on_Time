@@ -34,4 +34,9 @@
         </tbody>
 
     </table>
+    <youtube-player
+        [videoId]="lc"
+        (ready)="savePlayer($event)"
+        (change)="onStateChange($event)"
+    ></youtube-player>
 </div>

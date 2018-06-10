@@ -12,6 +12,8 @@ export class PacersComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'ind';
+  ip:string ='-KbjkCCjc84';
+  player: YT.Player;
 
   constructor(private httpService: HttpService) { }
 
@@ -19,4 +21,11 @@ export class PacersComponent implements OnInit {
     this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
+  savePlayer (player) {
+    this.player = player;
+    console.log('player instance', player);
+	}
+  onStateChange(event) {
+    console.log('player state', event.data);
+  }
 }

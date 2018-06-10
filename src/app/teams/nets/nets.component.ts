@@ -12,11 +12,21 @@ export class NetsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'bkn';
+  bn:string ='TK-pQJT_nX0';
+  player: YT.Player;
 
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
     this.playerentry$ = this.httpService.getRoster(this.teamName);
+  }
+
+  savePlayer (player) {
+    this.player = player;
+    console.log('player instance', player);
+	}
+  onStateChange(event) {
+    console.log('player state', event.data);
   }
 
 }
