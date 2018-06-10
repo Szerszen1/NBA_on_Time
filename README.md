@@ -31,6 +31,6 @@ Dominik Woźniczka:
     Łączny czas wykonania pracy: 32 godziny
     
 Katarzyna Zdeb:
-   stworzenie prototypu projektu (5 godzin) szukanie rozwiązania problemu pobierania informacji z api nba(17 godzin) próby stworzenie serwisu http i odczytywania danych(5 godzin) 
-   Łączny czas pracy:  27 godzin
+   stworzenie prototypu projektu (5 godzin) szukanie rozwiązania problemu pobierania informacji z api nba(17 godzin) próby stworzenie serwisu http i odczytywania danych(5 godzin) dodawanie serwisu youtube próba połączenia z YouTubeAPI (22 godziny), zmiana narzędzia na gotowy komponent i próby ulepszania, rozszerzenie zakładki Youtube (5 godzin), znalezienie i dodanie filmów do każdej drużyny (3 godziny), poprawa prototypu (3 godziny) 
+   Łączny czas pracy:  60 godzin
 
