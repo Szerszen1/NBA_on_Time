@@ -1,13 +1,13 @@
 <p>Simple datepicker</p>
 <form [formGroup]="radioGroupForm">
-        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model1">
-          <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
+    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model1">
+        <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
             <input ngbButton type="radio" value="playoff"> Playoff
           </label>
-          <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
+        <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
             <input ngbButton type="radio" value="regular"> Regular
           </label>
-        </div>
+    </div>
 </form>
 <hr>
 <pre>{{radioGroupForm.value['model1']}}</pre>
@@ -19,6 +19,7 @@
 <button class="btn btn-sm btn-outline-danger mr-2" (click)="selectToday()">Select Today</button>
 <button class="btn btn-sm btn-outline-danger mr-2" (click)="dp.navigateTo()">To current month</button>
 <div><button (click)="active()">Active</button>
+    <div>{{season}}</div>
     <div *ngFor="let p of scoreBoard$ | async">
         <p>{{p.game.homeTeam.City}} {{p.game.homeTeam.Name}} {{p.homeScore}} : {{p.awayScore}} {{p.game.awayTeam.City}} {{p.game.awayTeam.Name}} </p>
     </div>
