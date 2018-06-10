@@ -14,7 +14,7 @@
                     <button class="btn btn-danger btn-block" routerLink="/scores" routerLinkActive="active">Scores</button>
                     <button class="btn btn-danger btn-block" routerLink="/tables" routerLinkActive="active">Tables</button>
                     <button class="btn btn-danger btn-block" routerLink="/youtube-player" routerLinkActive="active">YouTube</button>
-                    <button class="btn btn-danger btn-block" routerLink="/favourites" routerLinkActive="active">Favourites</button>
+                    <hr>
                     <div *ngIf="auth.user | async as user;else notLogged">
                         <button class="btn btn-danger btn-block" routerLink="/user-profile" routerLinkActive="active">Hello {{user.displayName}}</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
@@ -30,24 +30,23 @@
                         <button class="btn btn-danger btn-block" routerLink="teams/kings" routerLinkActive="active" *ngIf="'Sacramento Kings' === user.favoriteTeam">Sacramento Kings</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/knicks" routerLinkActive="active" *ngIf="'New York Knicks' === user.favoriteTeam">New York Knicks</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/lakers" routerLinkActive="active" *ngIf="'Los Angeles Lakers' === user.favoriteTeam">Los Angeles Lakers</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
-                        <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/magic" routerLinkActive="active" *ngIf="'Orlando Magic' === user.favoriteTeam">Orlando Magic</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/mavericks" routerLinkActive="active" *ngIf="'Dallas Mavericks' === user.favoriteTeam">Dallas Mavericks</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/nets" routerLinkActive="active" *ngIf="'Brooklyn Nets' === user.favoriteTeam">Brooklyn Nets</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/nuggets" routerLinkActive="active" *ngIf="'Denver Nuggets' === user.favoriteTeam">Denver Nuggets</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/pacers" routerLinkActive="active" *ngIf="'Indiana Pacers' === user.favoriteTeam">Indiana Pacers</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/pelicans" routerLinkActive="active" *ngIf="'New Orleans Pelicans' === user.favoriteTeam">New Orleans Pelicans</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/philadelphia" routerLinkActive="active" *ngIf="'Philadelphia 76ers' === user.favoriteTeam">Philadelphia 76ers</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/pistons" routerLinkActive="active" *ngIf="'Detroit Pistons' === user.favoriteTeam">Detroit Pistons</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/raptors" routerLinkActive="active" *ngIf="'Toronto Raptors' === user.favoriteTeam">Toronto Raptors</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/rockets" routerLinkActive="active" *ngIf="'Houston Rockets' === user.favoriteTeam">Houston Rockets</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/spurs" routerLinkActive="active" *ngIf="'San Antonio Spurs' === user.favoriteTeam">San Antonio Spurs</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/suns" routerLinkActive="active" *ngIf="'Phoenix Suns' === user.favoriteTeam">Phoenix Suns</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/thunder" routerLinkActive="active" *ngIf="'Oklahoma City Thunder' === user.favoriteTeam">Oklahoma City Thunder</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/timberwolves" routerLinkActive="active" *ngIf="'Minnesota Timberwolves' === user.favoriteTeam">Minnesota Timberwolves</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/trailblazers" routerLinkActive="active" *ngIf="'Portland Trail Blazers' === user.favoriteTeam">Portland Trail Blazers</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/warriors" routerLinkActive="active" *ngIf="'Golden State Warriors' === user.favoriteTeam">Golden State Warriors</button>
+                        <button class="btn btn-danger btn-block" routerLink="teams/wizards" routerLinkActive="active" *ngIf="'Washington Wizards' === user.favoriteTeam">Washington Wizards</button>
                     </div>
                 </div>
             </div>

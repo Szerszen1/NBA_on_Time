@@ -31,104 +31,100 @@
 <ng-template #authenticated>
     <div *ngIf="auth.user | async as user">
         <h3>Hello, {{ user.displayName }}</h3>
-        <p>UID: {{ user.uid }}</p>
         <p>Favorite Team: </p>
         <h2>{{ user?.favoriteTeam }}</h2>
         <button class="btn btn-outline-danger btn-space" (click)="auth.signOut()">Logout</button>
         <hr/>
-        <form [formGroup]="radioGroupForm">
-                <div style="display: block" class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model2">
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+        <form [formGroup]="radioGroupForm" (click)="setFavoriteTeam(user)">
+            <div style="display: block" class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model2">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Milwaukee Bucks"> Milwaukee Bucks
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Chicago Bulls"> Chicago Bulls
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Cleveland Cavaliers"> Cleveland Cavaliers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Boston Celtics"> Boston Celtics
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Los Angeles Clippers"> Los Angeles Clippers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Memphis Grizzlies"> Memphis Grizzlies
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Atlanta Hawks"> Atlanta Hawks
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Miami Heat"> Miami Heat
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Charlotte Hornets"> Charlotte Hornets
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Utah Jazz"> Utah Jazz
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Sacramento Kings"> Sacramento Kings
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="New York Knicks"> New York Knicks
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Los Angeles Lakers"> Los Angeles Lakers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Orlando Magic"> Orlando Magic
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Dallas Mavericks"> Dallas Mavericks
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Brooklyn Nets"> Brooklyn Nets
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Denver Nuggets"> Denver Nuggets
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Indiana Pacers"> Indiana Pacers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="New Orleans Pelicans"> New Orleans Pelicans
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Philadelphia 76ers"> Philadelphia 76ers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Detroit Pistons"> Detroit Pistons
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Toronto Raptors"> Toronto Raptors
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Houston Rockets"> Houston Rockets
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="San Antonio Spurs"> San Antonio Spurs
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Phoenix Suns"> Phoenix Suns
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Oklahoma City Thunder"> Oklahoma City Thunder
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Minnesota Timberwolves"> Minnesota Timberwolves
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Portland Trail Blazers"> Portland Trail Blazers
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Golden State Warriors"> Golden State Warriors
                   </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
-                    <input ngbButton type="radio" value="Golden State Warriors"> Golden State Warriors
-                  </label>
-                  <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
+                <label ngbButtonLabel class="btn btn-sm btn-danger mr-2 btn-space">
                     <input ngbButton type="radio" value="Washington Wizards"> Washington Wizards
                   </label>
             </div>
