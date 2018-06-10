@@ -20,6 +20,9 @@ https://nba-be879.firebaseapp.com
 <img src="./prototype1.png" alt="Prototype1"/>
 <img src="./prototype2.png" alt="Prototype2"/>
 <img src="./prototype3.png" alt="Prototype3"/>
+<img src="./prototype4.png" alt="Prototype4"/>
+<img src="./prototype5.png" alt="Prototype5"/>
+<img src="./prototype6.png" alt="Prototype6"/>
 
 ## Raport pracy każdego członka zespołu:
 Jakub Szerszeń: 
