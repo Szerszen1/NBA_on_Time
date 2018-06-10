@@ -12,7 +12,7 @@ export class KnicksComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'nyk';
-  bc:string ='IeNdmbS8R4Q';
+  ny:string ='YEGfYsc8jlg';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

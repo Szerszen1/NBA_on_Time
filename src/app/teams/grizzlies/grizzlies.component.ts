@@ -12,7 +12,7 @@ export class GrizzliesComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'mem';
-  bc:string ='IeNdmbS8R4Q';
+  gr:string ='UYtQ_tME0So';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

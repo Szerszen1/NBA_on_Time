@@ -12,7 +12,7 @@ export class MavericksComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'dal'; // do zmiany
-  bc:string ='IeNdmbS8R4Q';
+  dm:string ='BGGScU0gAIc';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

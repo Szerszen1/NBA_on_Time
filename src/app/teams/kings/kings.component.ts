@@ -12,7 +12,7 @@ export class KingsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'sac';
-  bc:string ='IeNdmbS8R4Q';
+  sk:string ='cbg-ffrzdzo';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

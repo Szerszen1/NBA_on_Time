@@ -12,7 +12,7 @@ export class JazzComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'uta';
-  bc:string ='IeNdmbS8R4Q';
+  uj:string ='cnEOe06zp6w';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

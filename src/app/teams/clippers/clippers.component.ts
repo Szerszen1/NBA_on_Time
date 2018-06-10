@@ -12,8 +12,7 @@ export class ClippersComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'lac';
-
-  lac:string ='IeNdmbS8R4Q';
+  lc:string ='rGkXapbta9Y';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

@@ -12,7 +12,7 @@ export class HawksComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'atl';
-  bc:string ='IeNdmbS8R4Q';
+  hw:string ='-2VYkhfn87g';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

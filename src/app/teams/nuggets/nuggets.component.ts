@@ -12,7 +12,7 @@ export class NuggetsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'den';
-  bc:string ='IeNdmbS8R4Q';
+  dn:string ='ktuqGT-J8GM';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

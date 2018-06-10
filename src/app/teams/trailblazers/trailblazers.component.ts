@@ -12,7 +12,7 @@ export class TrailblazersComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'por';
-  bc:string ='IeNdmbS8R4Q';
+  pb:string ='odYVgvG3XYA';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

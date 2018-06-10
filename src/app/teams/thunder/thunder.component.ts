@@ -12,7 +12,7 @@ export class ThunderComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'okc';
-  bc:string ='IeNdmbS8R4Q';
+  ot:string ='NTfDcv488Kk';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

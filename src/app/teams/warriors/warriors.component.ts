@@ -12,7 +12,7 @@ export class WarriorsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'gsw';
-  bc:string ='IeNdmbS8R4Q';
+  gw:string ='jSVpSRjJY1E';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

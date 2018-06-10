@@ -12,7 +12,7 @@ export class NetsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'bkn';
-  bc:string ='IeNdmbS8R4Q';
+  bn:string ='TK-pQJT_nX0';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

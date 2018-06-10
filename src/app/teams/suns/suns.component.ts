@@ -12,7 +12,7 @@ export class SunsComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'phx';
-  bc:string ='IeNdmbS8R4Q';
+  ps:string ='XrGXP73DAIM';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

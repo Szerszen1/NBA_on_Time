@@ -12,7 +12,7 @@ export class MagicComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'orl';
-  bc:string ='IeNdmbS8R4Q';
+  om:string ='MIcXcZvu5Gk';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

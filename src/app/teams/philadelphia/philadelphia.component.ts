@@ -12,7 +12,7 @@ export class PhiladelphiaComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'phi';
-  bc:string ='IeNdmbS8R4Q';
+  ph:string ='XlGpcuaCgWI';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

@@ -12,7 +12,7 @@ export class HeatComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'mia';
-  bc:string ='IeNdmbS8R4Q';
+  ht:string ='ktDbvaq6K6o';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

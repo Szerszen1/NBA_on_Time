@@ -12,7 +12,7 @@ export class PelicansComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'nop'; // do zmiany
-  bc:string ='IeNdmbS8R4Q';
+  np:string ='3JOyhiT6va8';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

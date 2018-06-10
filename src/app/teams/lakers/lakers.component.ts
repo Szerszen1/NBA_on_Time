@@ -12,7 +12,7 @@ export class LakersComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'lal';
-  bc:string ='IeNdmbS8R4Q';
+  la:string ='1uZ85gWPfnA';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }

@@ -12,7 +12,7 @@ export class SpursComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'sas';
-  bc:string ='IeNdmbS8R4Q';
+  ss:string ='MYeHuY6BTYk';
   player: YT.Player;
 
   constructor(private httpService: HttpService) { }
