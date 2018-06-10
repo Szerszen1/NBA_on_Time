@@ -43,8 +43,6 @@ export class ScoresComponent implements OnInit {
     } else {
       this.month = '' + this.model.month
     }
-    console.log(this.radioGroupForm.value['model1']);
-    console.log(this.radioGroupForm.value['model1'] === 'playoff');
     if (this.radioGroupForm.value['model1'] === 'playoff') {
       this.season = '' + this.model.year + '-' + 'playoff';
     }
