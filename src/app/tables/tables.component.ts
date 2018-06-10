@@ -29,9 +29,6 @@ export class TablesComponent implements OnInit {
   */
 
   ngOnInit() {
-  }
-
-  active() {
     this.easternAtlantic$ = this.httpService.getDivisionTeamStandings(0);
     this.easternCentral$ = this.httpService.getDivisionTeamStandings(1);
     this.easternSoutheast$ = this.httpService.getDivisionTeamStandings(2);

@@ -16,10 +16,7 @@ export class MavericksComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-  }
-
-  active() {
-     this.playerentry$ = this.httpService.getRoster(this.teamName);
+    this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
 }
