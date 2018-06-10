@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { AuthService } from '../core/auth.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
+
 
   @Input()
   email: string;
@@ -24,7 +25,7 @@ export class UserProfileComponent implements OnInit {
     'favoriteTeam': [ ]
     });
     this.radioGroupForm = this.formBuilder.group({
-      'model2': 1
+      'model2': ''
     });
   }
   get favoriteTeam() { return this.detailForm.get('favoriteTeam') }
