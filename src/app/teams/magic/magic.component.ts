@@ -18,10 +18,7 @@ export class MagicComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-  }
-
-  active() {
-     this.playerentry$ = this.httpService.getRoster(this.teamName);
+    this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
   savePlayer (player) {
     this.player = player;

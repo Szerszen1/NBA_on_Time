@@ -17,11 +17,9 @@ export class BullsComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+    this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
-  active() {
-     this.playerentry$ = this.httpService.getRoster(this.teamName);
-  }
   savePlayer (player) {
     this.player = player;
     console.log('player instance', player);
@@ -29,4 +27,5 @@ export class BullsComponent implements OnInit {
   onStateChange(event) {
     console.log('player state', event.data);
   }
+
 }

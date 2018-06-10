@@ -24,35 +24,35 @@
 
 <hr/>
 
-<div><button (click)="active()">Active</button>
+<div><button class="btn btn-sm btn-outline-danger mr-2" (click)="active()">Active</button>
     <hr/>
     <div class="table-responsive">
-            <table class="table table-bordered table-dark table-hover">
-        
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Home Team City</th>
-                        <th scope="col">Home Team Name</th>
-                        <th scope="col">Home Team Score</th>
-                        <th scope="col">:</th>
-                        <th scope="col">Away Team Score</th>
-                        <th scope="col">Away Team City</th>
-                        <th scope="col">Away Team Name</th>
-                    </tr>
-                </thead>
-        
-                <tbody>
-                    <tr *ngFor="let p of scoreBoard$ | async">
-                        <td>{{p.game.homeTeam.City}}</td>
-                        <td>{{p.game.homeTeam.Name}}</td>
-                        <td>{{p.homeScore}}</td>
-                        <td>:</td>
-                        <td>{{p.awayScore}}</td>
-                        <td>{{p.game.awayTeam.City}}</td>
-                        <td>{{p.game.awayTeam.Name}}</td>
-                    </tr>
-                </tbody>
-        
-            </table>
-        </div>
+        <table class="table table-bordered table-dark table-hover">
+
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Home Team City</th>
+                    <th scope="col">Home Team Name</th>
+                    <th scope="col">Home Team Score</th>
+                    <th scope="col">:</th>
+                    <th scope="col">Away Team Score</th>
+                    <th scope="col">Away Team City</th>
+                    <th scope="col">Away Team Name</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let p of scoreBoard$ | async">
+                    <td>{{p.game.homeTeam.City}}</td>
+                    <td>{{p.game.homeTeam.Name}}</td>
+                    <td>{{p.homeScore}}</td>
+                    <td>:</td>
+                    <td>{{p.awayScore}}</td>
+                    <td>{{p.game.awayTeam.City}}</td>
+                    <td>{{p.game.awayTeam.Name}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>

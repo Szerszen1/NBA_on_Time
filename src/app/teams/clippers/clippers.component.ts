@@ -18,11 +18,9 @@ export class ClippersComponent implements OnInit {
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
+    this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
 
-  active() {
-     this.playerentry$ = this.httpService.getRoster(this.teamName);
-  }
   savePlayer (player) {
     this.player = player;
     console.log('player instance', player);

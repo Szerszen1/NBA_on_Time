@@ -8,7 +8,6 @@ import { NewsComponent } from './news/news.component';
 import { TablesComponent } from './tables/tables.component';
 import { ScoresComponent } from './scores/scores.component';
 import { TeamsComponent } from './teams/teams.component';
-import { FavouritesComponent } from './favourites/favourites.component';
 import { BucksComponent } from './teams/bucks/bucks.component';
 import { BullsComponent } from './teams/bulls/bulls.component';
 import { CavaliersComponent } from './teams/cavaliers/cavaliers.component';
@@ -49,7 +48,6 @@ const routes: Routes = [
   { path: 'tables', component: TablesComponent},
   { path: 'scores', component: ScoresComponent},
   { path: 'teams', component: TeamsComponent},
-  { path: 'favourites', component: FavouritesComponent},
   { path: 'teams/bucks', component: BucksComponent},
   { path: 'teams/bulls', component: BullsComponent},
   { path: 'teams/cavaliers', component: CavaliersComponent},

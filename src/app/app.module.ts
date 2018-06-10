@@ -24,7 +24,6 @@ import { NewsComponent } from './news/news.component';
 import { TablesComponent } from './tables/tables.component';
 import { ScoresComponent } from './scores/scores.component';
 import { TeamsComponent } from './teams/teams.component';
-import { FavouritesComponent } from './favourites/favourites.component';
 import { LakersComponent } from './teams/lakers/lakers.component';
 import { HttpService } from './http.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -70,7 +69,6 @@ import { HomepageComponent } from './homepage/homepage.component';
     TablesComponent,
     ScoresComponent,
     TeamsComponent,
-    FavouritesComponent,
     LakersComponent,
     CelticsComponent,
     RocketsComponent,
