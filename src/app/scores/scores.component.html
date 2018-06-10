@@ -12,7 +12,9 @@
 <hr>
 <pre>{{radioGroupForm.value['model1']}}</pre>
 
-<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+<div>
+    <ngb-datepicker style="background-color: gray" #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+</div>
 
 <hr/>
 
