@@ -26,9 +26,9 @@ export class HttpService {
      {headers}).map(response => response.divisionteamstandings.division[nr].teamentry as Teamentry[]);
   }
 
-  getScoreboard(date: string): Observable<GameScore[]> {
+  getScoreboard(date: string, season: string): Observable<GameScore[]> {
     return this.http.get<Games>(
-      '  https://api.mysportsfeeds.com/v1.2/pull/nba/latest/scoreboard.json?fordate=' + date,
+      '  https://api.mysportsfeeds.com/v1.2/pull/nba/' + season + '/scoreboard.json?fordate=' + date,
      {headers}).map(response => response.scoreboard.gameScore as GameScore[]);
   }
 

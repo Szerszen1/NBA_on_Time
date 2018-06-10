@@ -1,13 +1,13 @@
 <h3>Choose type of match you want to display: </h3>
 <form [formGroup]="radioGroupForm">
-        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model1">
-          <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
+    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model1">
+        <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
             <input ngbButton type="radio" value="playoff"> Playoff
           </label>
-          <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
+        <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
             <input ngbButton type="radio" value="regular"> Regular
           </label>
-        </div>
+    </div>
 </form>
 <pre>{{radioGroupForm.value['model1']}}</pre>
 
