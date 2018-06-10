@@ -3,3 +3,11 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+th{
+    text-align:center; 
+}
+
+td{
+    text-align:center;
+}
