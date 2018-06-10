@@ -16,11 +16,15 @@ export class UserProfileComponent implements OnInit {
 
   detailForm: FormGroup;
 
-  constructor(public fb: FormBuilder, public auth: AuthService) { }
+  public radioGroupForm: FormGroup;
+  constructor(public fb: FormBuilder, public auth: AuthService , private formBuilder: FormBuilder) { }
 
   ngOnInit() {
      this.detailForm = this.fb.group({
     'favoriteTeam': [ ]
+    });
+    this.radioGroupForm = this.formBuilder.group({
+      'model2': 1
     });
   }
   get favoriteTeam() { return this.detailForm.get('favoriteTeam') }
