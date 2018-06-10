@@ -3,6 +3,7 @@ import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import { HttpService } from '../http.service';
 import { Observable } from 'rxjs/Observable';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 const now = new Date();
 
@@ -21,10 +22,14 @@ export class ScoresComponent implements OnInit {
   dateValid: string;
   season: string;
 
+  public radioGroupForm: FormGroup;
 
-  constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService , private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.radioGroupForm = this.formBuilder.group({
+      'model1': 1
+    });
   }
 
   active() {
