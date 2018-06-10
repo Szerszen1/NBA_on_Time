@@ -15,8 +15,8 @@
                     <button class="btn btn-danger btn-block" routerLink="/news" routerLinkActive="active">News</button>
                     <button class="btn btn-danger btn-block" routerLink="/youtube-player" routerLinkActive="active">YouTube</button>
                     <button class="btn btn-danger btn-block" routerLink="/favourites" routerLinkActive="active">Favourites</button>
+                    <hr/>
                     <button class="btn btn-danger btn-block" routerLink="/user-profile" routerLinkActive="active" *ngIf="auth.user | async as user;else notLogged">Hello {{user.displayName}}</button>
-
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<p>Simple datepicker</p>
+<h3>Choose type of match you want to display: </h3>
 <form [formGroup]="radioGroupForm">
         <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model1">
           <label ngbButtonLabel class="btn btn-sm btn-danger mr-2">
@@ -11,6 +11,8 @@
 </form>
 <hr/>
 <pre>{{radioGroupForm.value['model1']}}</pre>
+
+<h3>Pick the date from which you want to view the results: </h3>
 
 <div>
     <ngb-datepicker style="background-color: gray" #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>

@@ -32,8 +32,9 @@
     <div *ngIf="auth.user | async as user">
         <h3>Hello, {{ user.displayName }}</h3>
         <p>UID: {{ user.uid }}</p>
-        <p>Favorite Team: {{ user?.favoriteTeam }} </p>
-        <button (click)="auth.signOut()">Logout</button>
+        <p>Favorite Team: </p>
+        <h2>{{ user?.favoriteTeam }}</h2>
+        <button class="btn btn-outline-danger btn-space" (click)="auth.signOut()">Logout</button>
         <hr/>
         <form [formGroup]="radioGroupForm">
                 <div style="display: block" class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model2">
