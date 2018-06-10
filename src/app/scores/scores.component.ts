@@ -28,7 +28,7 @@ export class ScoresComponent implements OnInit {
 
   ngOnInit() {
     this.radioGroupForm = this.formBuilder.group({
-      'model1': 1
+      'model1': ''
     });
   }
 
@@ -43,18 +43,21 @@ export class ScoresComponent implements OnInit {
     } else {
       this.month = '' + this.model.month
     }
-    if (this.season === 'playoff') {
+    console.log(this.radioGroupForm.value['model1']);
+    console.log(this.radioGroupForm.value['model1'] === 'playoff');
+    if (this.radioGroupForm.value['model1'] === 'playoff') {
       this.season = '' + this.model.year + '-' + 'playoff';
     }
-    if (this.season === 'regular' && this.model.month > 8) {
+    if (this.radioGroupForm.value['model1'] === 'regular' && this.model.month > 8) {
       this.season = '' + this.model.year + '-' + (this.model.year + 1) + '-' + 'regular';
-    } else {
+    }
+    if (this.radioGroupForm.value['model1'] === 'regular' && this.model.month <= 8) {
       this.season = '' + ( this.model.year - 1 ) + '-' + this.model.year  + '-' + 'regular';
     }
 
     this.dateValid = '' + this.model.year + this.month + this.day;
 
-    this.scoreBoard$ = this.httpService.getScoreboard(this.dateValid);
+    this.scoreBoard$ = this.httpService.getScoreboard(this.dateValid, this.season);
   }
    selectToday() {
     this.model = {year: now.getFullYear(), month: now.getMonth() + 1, day: now.getDate()};
