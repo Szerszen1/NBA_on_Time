@@ -13,6 +13,9 @@ export class ClippersComponent implements OnInit {
   playerentry$: Observable<Playerentry[]>;
   teamName = 'lac';
 
+  lac:string ='IeNdmbS8R4Q';
+  player: YT.Player;
+
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
@@ -21,5 +24,11 @@ export class ClippersComponent implements OnInit {
   active() {
      this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
-
+  savePlayer (player) {
+    this.player = player;
+    console.log('player instance', player);
+	}
+  onStateChange(event) {
+    console.log('player state', event.data);
+  }
 }

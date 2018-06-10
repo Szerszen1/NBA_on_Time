@@ -12,6 +12,8 @@ export class JazzComponent implements OnInit {
 
   playerentry$: Observable<Playerentry[]>;
   teamName = 'uta';
+  bc:string ='IeNdmbS8R4Q';
+  player: YT.Player;
 
   constructor(private httpService: HttpService) { }
 
@@ -21,5 +23,12 @@ export class JazzComponent implements OnInit {
   active() {
      this.playerentry$ = this.httpService.getRoster(this.teamName);
   }
-
+ 
+  savePlayer (player) {
+    this.player = player;
+    console.log('player instance', player);
+	}
+  onStateChange(event) {
+    console.log('player state', event.data);
+  }
 }
