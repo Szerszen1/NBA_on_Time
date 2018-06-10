@@ -2,8 +2,17 @@ body {
     padding: 2em;
 }
 
-
+form {
+    display: block;
+    margin-top: 0em;
+}
 /* Shared */
+
+.btn-space {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 .loginBtn {
     box-sizing: border-box;

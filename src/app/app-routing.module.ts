@@ -39,6 +39,7 @@ import { TimberwolvesComponent } from './teams/timberwolves/timberwolves.compone
 import { TrailblazersComponent } from './teams/trailblazers/trailblazers.component';
 import { WarriorsComponent } from './teams/warriors/warriors.component';
 import { WizardsComponent } from './teams/wizards/wizards.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   { path: 'user-profile', component: UserProfileComponent},
@@ -79,7 +80,7 @@ const routes: Routes = [
   { path: 'teams/trailblazers', component: TrailblazersComponent},
   { path: 'teams/warriors', component: WarriorsComponent},
   { path: 'teams/wizards', component: WizardsComponent},
-
+  { path: 'homepage', component: HomepageComponent},
 ];
 
 @NgModule({
