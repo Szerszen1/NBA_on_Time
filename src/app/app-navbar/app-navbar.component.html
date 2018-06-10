@@ -9,6 +9,7 @@
                     </button>
                 <div style="background:#696969" ngbDropdownMenu aria-labelledby="dropdownMenu1">
 
+                    <button class="btn btn-danger btn-block" routerLink="/homepage" routerLinkActive="active">Home</button>
                     <button class="btn btn-danger btn-block" routerLink="/teams" routerLinkActive="active">Teams</button>
                     <button class="btn btn-danger btn-block" routerLink="/scores" routerLinkActive="active">Scores</button>
                     <button class="btn btn-danger btn-block" routerLink="/tables" routerLinkActive="active">Tables</button>
@@ -17,6 +18,7 @@
                     <button class="btn btn-danger btn-block" routerLink="/favourites" routerLinkActive="active">Favourites</button>
                     <hr/>
                     <button class="btn btn-danger btn-block" routerLink="/user-profile" routerLinkActive="active" *ngIf="auth.user | async as user;else notLogged">Hello {{user.displayName}}</button>
+                
                 </div>
             </div>
         </div>

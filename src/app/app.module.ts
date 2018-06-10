@@ -57,6 +57,7 @@ import { PistonsComponent } from './teams/pistons/pistons.component';
 import { WizardsComponent } from './teams/wizards/wizards.component';
 import { RaptorsComponent } from './teams/raptors/raptors.component';
 import { PhiladelphiaComponent } from './teams/philadelphia/philadelphia.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -100,6 +101,7 @@ import { PhiladelphiaComponent } from './teams/philadelphia/philadelphia.compone
     WizardsComponent,
     RaptorsComponent,
     PhiladelphiaComponent,
+    HomepageComponent,
   ],
   imports: [
     NgbModule.forRoot(),
