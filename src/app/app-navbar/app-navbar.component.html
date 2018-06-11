@@ -16,7 +16,7 @@
                     <button class="btn btn-danger btn-block" routerLink="/youtube-player" routerLinkActive="active">YouTube</button>
                     <hr>
                     <div *ngIf="auth.user | async as user;else notLogged">
-                        <button class="btn btn-danger btn-block" routerLink="/user-profile" routerLinkActive="active">Hello {{user.displayName}}</button>
+                        <button class="btn btn-success btn-block" routerLink="/user-profile" routerLinkActive="active">Hello {{user.displayName}}</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/bucks" routerLinkActive="active" *ngIf="'Milwaukee Bucks' === user.favoriteTeam">Milwaukee Bucks</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/bulls" routerLinkActive="active" *ngIf="'Chicago Bulls' === user.favoriteTeam">Chicago Bulls</button>
                         <button class="btn btn-danger btn-block" routerLink="teams/cavaliers" routerLinkActive="active" *ngIf="'Cleveland Cavaliers' === user.favoriteTeam">Cleveland Cavaliers</button>
@@ -60,7 +60,7 @@
 <ng-template #notLogged>
     <div></div>
     <div ngbDropdown>
-        <button class="btn btn-danger btn-block" routerLink="/user-profile" routerLinkActive="active">Login</button>
-        <button class="btn btn-danger btn-block" routerLink="/user-form" routerLinkActive="active">Sign Up</button>
+        <button class="btn btn-success btn-block" routerLink="/user-profile" routerLinkActive="active">Login</button>
+        <button class="btn btn-warning btn-block" routerLink="/user-form" routerLinkActive="active">Sign Up</button>
     </div>
 </ng-template>
