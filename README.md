@@ -30,7 +30,8 @@ Jakub Szerszeń:
     Łączny czas wykonania pracy: 52,5 godziny
 
 Dominik Woźniczka:
-    stworzenie navbara i oprawy graficznej (10 godzin), tworzenie komponentów do wyświetlania zawartości aplikacji (3 godziny), stworzenie routingu i połączenie go do odpowiednich sekcji aplikacji (4,5 godzin), instalacja i implementacja youtube player jako podstawy do wyswietlania filmów w aplikacji (2,5 godziny), nanoszenie poprawek i "kosmetyka" (4,5 godziny), naprawa błędów i konfiguracja środowiska (7,5 godziny)
+    <p>stworzenie navbara i oprawy graficznej (10 godzin)</p>, 
+    <p>tworzenie komponentów do wyświetlania zawartości aplikacji (3 godziny)</p>, stworzenie routingu i połączenie go do odpowiednich sekcji aplikacji (4,5 godzin), instalacja i implementacja youtube player jako podstawy do wyswietlania filmów w aplikacji (2,5 godziny), nanoszenie poprawek i "kosmetyka" (4,5 godziny), naprawa błędów i konfiguracja środowiska (7,5 godziny), wyświetlanie otrzymanych surowych danych w tabelach oraz poprawianie funkcjonalności buttons(5,5h), utworzenie routingu do buttons oraz wypchniecie z nich odpowiedniego wyboru(3,5h), stworzenie componentu datepicker w celu wybierania daty oraz innych opcji i wyświetlenia meczy o danych właściwościach (5h)
     Łączny czas wykonania pracy: 32 godziny
     
 Katarzyna Zdeb:
